@@ -1,0 +1,77 @@
+@font-face { font-family: Big John; src: url('../fonts/BIG_JOHN.otf'); }
+@font-face { font-family: Slim Joe; src: url('../fonts/Slim_Joe.otf'); }
+@font-face { font-family: League Mono; src: url('../fonts/LeagueMono-Regular.otf'); }
+
+html, body {
+	background-color: #f9f9f9;
+	color: black;
+	height: 100%;
+}
+
+.big-john {	font-family: Big John; }
+.slim-joe {	font-family: Slim Joe; }
+.league-mono { font-family: League Mono; }
+.abril-fatface { font-family: 'Abril Fatface'; }
+.open-sans { font-family: 'Open Sans'; font-weight: 300;}
+.work-sans { font-family: 'Work Sans'; }
+
+
+.hidden-page {
+	height: 100%;
+	position: relative;
+	z-index:5;
+	color: white;
+}
+
+.hp-top { top:-110%; }
+.hp-left { left:-110%; }
+.hp-right { right:-110%; }
+.hp-bottom { bottom:-110%; }
+
+#cover-container {
+	max-width: 42rem;
+	position: absolute;
+	top:0; bottom:0;
+	left:0; right:0;
+}
+
+.main-link {
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+#wrk-link {	color: #39aa56; }
+#abt-link { color: #ff5722; }
+#fun-link { color: #ff0000; }
+#cot-link { color: #1565c0; }
+
+.display-3 {
+	font-size: 3.5rem;
+}
+.display-4 {
+	font-size: 2.5rem;
+}
+.title-close { cursor: pointer; }
+
+
+/* Responsive Font - Media Queries */
+  @media(min-width: 576px) {
+
+
+
+} @media (min-width: 768px) {
+	.display-3 {
+		font-size: 5.5rem;
+	}
+	.display-4 {
+		font-size: 3.5rem;
+	}
+} @media (min-width: 992px) {
+
+
+
+} @media (min-width: 1200px) {
+
+
+
+}
