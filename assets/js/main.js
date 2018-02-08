@@ -1,8 +1,12 @@
 $(document).ready(function() {
 
-	var direction = 'top';
+	var direction = 'top',
+	clicked = false;
 	
 	$('.main-link').click(function() {
+		if (clicked)
+			return;
+		clicked = true;
 		var color = $(this).css("color");
 		console.log(color);
 		var winHeight = $(window).height();
@@ -17,12 +21,19 @@ $(document).ready(function() {
 		var options = {};
 		options[newDir] = 0;
 		$(".hidden-page").css("background-color", color);
-		$('.hidden-page').removeClass('hp-'+newDir, 1250);
+		$('.hidden-page').removeClass('hp-'+newDir, 1250, function() {
+			clicked = false;
+		});
 		direction = newDir;
 	});
 
 	$('.close, .title-close').click(function() {
-		$('.hidden-page').addClass('hp-'+direction, 1250);
+		if (clicked)
+			return;
+		clicked = true;
+		$('.hidden-page').addClass('hp-'+direction, 1250, function() {
+			clicked = false;
+		});
 	})
 
 });

@@ -23,10 +23,10 @@ html, body {
 	color: white;
 }
 
-.hp-top { top:-110%; }
-.hp-left { left:-110%; }
-.hp-right { right:-110%; }
-.hp-bottom { bottom:-110%; }
+.hp-top { top:-101%; }
+.hp-left { left:-101%; }
+.hp-right { right:-101%; }
+.hp-bottom { bottom:-101%; }
 
 #cover-container {
 	max-width: 42rem;
