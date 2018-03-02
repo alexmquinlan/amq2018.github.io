@@ -42,6 +42,12 @@ $(document).ready(function() {
 		var contactEmail = $("#contactEmail").val();
 		var contactName = $("#contactName").val();
 		var contactContent = $("#contactContent").val();
+
+		if (contactEmail == "" || contactEmail == undefined ||
+			contactName == "" || contactName == undefined ||
+			contactContent == "" || contactContent == undefined) {
+			return;
+		}
 		
 		$.ajax({
 			url: "//formspree.io/alexquinlan1@gmail.com",
