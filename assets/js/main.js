@@ -34,6 +34,35 @@ $(document).ready(function() {
 		$('.hidden-page').addClass('hp-'+direction, 1250, function() {
 			clicked = false;
 		});
-	})
+	});
+
+
+	$("#contactFormSubmit").click(function(e) {
+		e.preventDefault();
+		var contactEmail = $("#contactEmail").val();
+		var contactName = $("#contactName").val();
+		var contactContent = $("#contactContent").val();
+		
+		$.ajax({
+			url: "//formspree.io/alexquinlan1@gmail.com",
+			method: "POST",
+			data: {
+				"email": contactEmail,
+				"name": contactName,
+				"text": contactContent
+			},
+			dataType: "json"
+		}).done(function(result) {
+			console.log(result);
+			console.log("Success!");
+
+			$("#contactForm")[0].reset();
+
+		}).fail(function(result) {
+			console.log(result);
+			console.log("failure");
+		});
+	});
+
 
 });
