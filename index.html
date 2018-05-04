@@ -12,17 +12,18 @@
 	</head>
 
 	<body>
+			<div class="corner-ribbon top-left" style="font-size:0.75em;">Under Construction!</div>
 		<div class="h-100" style="overflow: hidden;">
 			<div class="d-flex mx-auto h-100 p-3 flex-column text-center" id="cover-container">
 				<header class="masthead mb-auto"></header>
 				<main class="">
 					<h1 class="display-3 mb-0 abril-fatface">Alex Quinlan</h1>
-					<h2 class="display-4 open-sans" style="color: #888;">Web Designer</h2>
-					<div class="mt-4 row">
-						<div class="col-12 col-md-3 main-link" id="wrk-link" name="left">Work</div>
+					<h2 class="display-4 open-sans" style="color: #888;">Software Engineer</h2>
+					<div class="mt-2 row">
+						<!-- <div class="col-12 col-md-3 main-link" id="wrk-link" name="left">Work</div>
 						<div class="col-12 col-md-3 main-link" id="abt-link" name="top">About</div>
-						<div class="col-12 col-md-3 main-link" id="fun-link" name="right">Fun</div>
-						<div class="col-12 col-md-3 main-link" id="cot-link" name="bottom">Contact</div>
+						<div class="col-12 col-md-3 main-link" id="fun-link" name="right">Fun</div> -->
+						<div class="col-12 col-md-12 main-link" id="cot-link" name="bottom">Contact</div>
 					</div>
 				</main>
 				<footer class="mastfoot mt-auto"></footer>
@@ -63,7 +64,11 @@
 										<textarea class="form-control" id="contactContent" rows="4" name="contactContent"></textarea>
 									</div>
 								</div>
-								<button id="contactFormSubmit" class="btn btn-outline-light">Submit</button>
+								<div class="row">
+									<div class="col"></div>
+									<div class="col-auto"><button id="contactFormSubmit" class="btn btn-outline-light">Submit</button></div>
+									<div class="col"></div>
+								</div>
 							</form>
 
 							<!--<div class="col-12 col-sm-2 page-content-hgt page-content-side">
@@ -77,6 +82,20 @@
 							<div class="col-12 col-sm-10 page-content-hgt">
 								content here
 							</div>-->
+						</div>
+						<div class="row m-4">
+						    <div class="col"><hr style="background-color: white;width:75%;"></div>
+						    <div class="col-auto">OR</div>
+						    <div class="col"><hr style="background-color: white;width:75%;"></div>
+						</div>
+						<div class="row m-4">
+							<div class="col"></div>
+							<div class="col-auto">
+								<form method="get" action="assets/images/aqresume.pdf">
+									<button type="submit" id="resumeDownload" class="btn btn-outline-light">Download My Resume</button>
+								</form>
+							</div>
+							<div class="col"></div>
 						</div>
 					</div>
 				</div>
